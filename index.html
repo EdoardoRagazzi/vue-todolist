@@ -20,13 +20,13 @@
             <img src="https://www.boolean.careers/images/misc/logo.png" alt="logoBoolean">
         </div>
         <div class="data pt-3">
-            <input type="text" placeholder="Inserisci New Data">
-            <button type="button" class="btn btn-success">ADD</button>
+            <input type="text" placeholder="Inserisci New Data" @keyup.enter="addTodo" v-model="newData">
+            <button type="button" class="btn btn-success" @click="addTodo">ADD</button>
         </div>
         <div class="todos-container">
             <ul>
                 <li class="todo text-uppercase border-bottom p-2 m-5" v-for="(item,index) in todos">
-                    {{item}} <i class="bi bi-trash-fill"></i>
+                    {{item}} <i class="bi bi-trash-fill" @click="removeData(index)"></i>
                 </li>
             </ul>
         </div>
