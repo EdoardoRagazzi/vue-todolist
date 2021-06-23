@@ -36,3 +36,6 @@ input{
 .todo i{
     float: right;
 }
+.todo:hover{
+    background-color: ivory;
+}
