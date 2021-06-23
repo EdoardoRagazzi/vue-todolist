@@ -12,7 +12,8 @@ const app = new Vue(
         },
         methods: {
             addTodo() {
-                this.todos.push(this.newData);
+                if (this.newData != '')
+                    this.todos.push(this.newData);
                 console.log(this.newData);
                 this.newData = '';
             },
