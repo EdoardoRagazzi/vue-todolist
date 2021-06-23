@@ -24,16 +24,19 @@
             <button type="button" class="btn btn-success" @click="addTodo">ADD</button>
         </div>
         <div class="todos-container">
-            <ul>
+            <ul v-if="todos.length > 0">
                 <li class="todo text-uppercase border-bottom p-2 m-5" v-for="(item,index) in todos">
-                    {{item}} <i class="bi bi-trash-fill" @click="removeData(index)"></i>
+                    {{index}} <i class="bi bi-arrow-right"></i> {{item}} <i class="bi bi-trash-fill"
+                        @click="removeData(index)"></i>
                 </li>
             </ul>
+            <h3 v-else>INSERT DATA</h3>
         </div>
 
     </div>
 
-    <script src="js/script.js"></script>
+    <script src=" js/script.js">
+    </script>
 </body>
 
 </html>

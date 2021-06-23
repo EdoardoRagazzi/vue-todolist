@@ -22,6 +22,9 @@
     width: 100px;
     border: 2px solid green;
 }
+ul{
+    list-style-type: none;
+}
 input{
     border-radius: 5px;
     border: 1px solid black;
@@ -33,9 +36,13 @@ input{
     float: left;
     width: 70%;
 }
-.todo i{
+i:nth-child(2){
     float: right;
 }
 .todo:hover{
     background-color: ivory;
+}
+h3{
+    text-align: center;
+    padding: 50px;
 }
