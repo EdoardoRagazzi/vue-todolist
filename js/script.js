@@ -7,7 +7,7 @@ const app = new Vue(
                 'correre',
                 'placcare',
                 'arrampicare',
-                'defecazio'
+                'calciare'
             ]
         },
         methods: {
