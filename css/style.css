@@ -1,0 +1,16 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+.container{
+     background-image: var(--bs-gradient); 
+    width: 80%;
+    height: 80%;
+    border-radius: 10px;
+    margin: 5% auto;
+}
+.logo img{
+    max-width: 200px;
+}
